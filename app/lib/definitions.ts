@@ -8,7 +8,12 @@ export type User = {
   email: string;
   password: string;
 };
-
+export type Personne={
+  id: number;
+  prenom: string;
+  nom: string;
+  adresse: string;
+}
 export type Customer = {
   id: string;
   name: string;
@@ -85,4 +90,9 @@ export type InvoiceForm = {
   customer_id: string;
   amount: number;
   status: 'pending' | 'paid';
+};
+export type statistics = {
+  id:number;
+ solde:number;
+ designation:string;
 };
